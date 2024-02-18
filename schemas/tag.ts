@@ -3,7 +3,7 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'tag',
-  title: 'Category',
+  title: 'Industry',
   icon: TagIcon,
   type: 'document',
   fields: [

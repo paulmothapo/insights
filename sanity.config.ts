@@ -21,7 +21,7 @@ import { previewUrl } from 'sanity-plugin-iframe-pane/preview-url'
 import authorType from 'schemas/author'
 import postType from 'schemas/post'
 import settingsType from 'schemas/settings'
-import categoryType from 'schemas/category'
+// import categoryType from 'schemas/category'
 import tagtype from 'schemas/tag'
 
 const title =
@@ -34,7 +34,7 @@ export default defineConfig({
   title,
   schema: {
     // If you want more content types, you can add them to this array
-    types: [authorType, postType, categoryType, tagtype, settingsType],
+    types: [authorType, postType, tagtype, settingsType],
   },
   plugins: [
     deskTool({

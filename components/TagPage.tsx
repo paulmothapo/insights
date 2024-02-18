@@ -51,7 +51,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async (ctx) => {
 
   const [settings, { tag, industry }] = await Promise.all([
     getSettings(client),
-    getPostsByTag(client, params.tag as string), // Fetch posts by tag
+    getPostsByTag(client, params.tag as string), 
   ]);
 
   return {

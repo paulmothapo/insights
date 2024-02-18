@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
-import { getClient, getPostsByTag, getSettings } from 'lib/sanity.client';
+import { getClient, getPostsByTag, getSettings, getAllPostsSlugs } from 'lib/sanity.client';
 import { Post, Settings } from 'lib/sanity.queries';
 
 interface PageProps {
@@ -41,3 +41,12 @@ export const getStaticProps: GetStaticProps<PageProps> = async (ctx) => {
     },
   };
 };
+
+export const getStaticPaths = async () => {
+  const slugs = await getAllPostsSlugs()
+
+  return {
+    paths: slugs?.map(({ slug }) => `/posts/${slug}`) || [],
+    fallback: 'blocking',
+  }
+}

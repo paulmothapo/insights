@@ -191,6 +191,7 @@ export default defineType({
       type: 'array',
       of: [{ type: 'reference', to: [{ type: tagType.name }] }],
     }),
+    
     defineField({
       name: 'category',
       title: 'Category',

@@ -4,6 +4,7 @@ import Layout from 'components/BlogLayout'
 import HeroPost from 'components/HeroPost'
 import IndexPageHead from 'components/IndexPageHead'
 import MoreStories from 'components/MoreStories'
+import TagPage from 'components/TagPage'
 import Footer from './Footer'
 import Header from './NevbarNew'
 
@@ -26,6 +27,7 @@ export default function IndexPage(props: IndexPageProps) {
     <>
       <IndexPageHead settings={settings} />
       <Header/>
+      {/* <TagPage/> */}
       <Layout preview={preview} loading={loading}>
         <Container>
           <BlogHeader title={title} description={description} level={1} />

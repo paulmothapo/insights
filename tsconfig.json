@@ -24,6 +24,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "schemas/settings", "pages/categories/[categorySlug].tsx", "components/Footer.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "schemas/settings", "pages/industries/[categorySlug].tsx", "components/Footer.js"],
   "exclude": ["node_modules"]
 }

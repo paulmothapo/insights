@@ -43,8 +43,12 @@ export const postBySlugQuery = groq`
 
 export const tagsQuery = groq`
 *[_type == "tag"] {
+  _id,
   name,
   "slug": slug.current,
+  "posts": *[_type == "post" && references(^._id)] {
+    ${postFields}
+  }
 }
 `;
 

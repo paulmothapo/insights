@@ -1,4 +1,3 @@
-import Avatar from 'components/AuthorAvatar'
 import CoverImage from './CoverBackground'
 import Date from 'components/PostDate'
 import Tag from 'components/Tag' 
@@ -9,7 +8,7 @@ import { ChevronRightIcon } from '@heroicons/react/outline';
 export default function PostHeader(
   props: Pick<Post, 'title' | 'coverImage' | 'date' | 'author' | 'slug' | 'tags'>,
 ) {
-  const { title, coverImage, date, author, slug, tags } = props;
+  const { title, coverImage, date, slug, tags } = props;
 
   return (
     <>
@@ -17,11 +16,10 @@ export default function PostHeader(
         <CoverImage title={title} image={coverImage} priority slug={slug} />
       </div>
 
-      <div className="ml-6 md:ml-52">
+      <div className="ml-6 md:ml-72 ">
         <div className="mt-2 text-base">
           <Date dateString={date} />
         </div>
-        
         
         <div className="">
           {tags && tags.length > 0 && (

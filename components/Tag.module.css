@@ -1,11 +1,11 @@
 
 .tag {
     display: inline-block;
-    margin-right: 8px;
-    color: #0400f3;
+    /* margin-right: 8px; */
+    color: rgb(46, 105, 255);
     font-weight: bold;
-    padding: 4px 8px;
-    border-radius: 8px; 
+    /* padding: 4px 8px;
+    border-radius: 8px;  */
     text-decoration: none;
   }
   

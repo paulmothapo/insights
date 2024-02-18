@@ -28,7 +28,7 @@ const PdfDownloadButton = ({ content }) => {
   };
 
   return (
-    <button className='text-mildgreen md:ml-52 ml-6 font-light' onClick={handleClick}>
+    <button className='text-mildgreen md:ml-72 ml-6 font-semibold hover:underline  ' onClick={handleClick}>
       Download
     </button>
   );

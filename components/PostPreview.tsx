@@ -23,15 +23,15 @@ export default function PostPreview({
           priority={false}
         />
       </div>
-      <h3 className="mb-3 text-3xl leading-snug">
+      <h3 className="mb-2 text-2xl font-medium leading-snug">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="mb-4 text-lg">
+      <div className="">
         <Date dateString={date} />
       </div>
-      <div className='text-blue-500 mb-4 font-semibold'>
+      <div className='text-blue-500 mb-2 font-semibold border-b-2 border-b-darkgreen'>
           {tags && tags.map((tag: Tag, index: number) => (
               <Link key={index} href={`/categories/${tag.slug}`} passHref legacyBehavior>
                 <a>
@@ -40,7 +40,7 @@ export default function PostPreview({
               </Link>
             ))}
           </div>
-      {excerpt && <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>}
+      {excerpt && <p className="mb-2 text-base">{excerpt}</p>}
       {author && <Avatar name={author.name} picture={author.picture} />}
     </div>
   )

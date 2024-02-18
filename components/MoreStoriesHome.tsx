@@ -6,27 +6,29 @@ import { ChevronRightIcon } from '@heroicons/react/outline';
 export default function MoreStories({ posts }: { posts: Post[] }) {
   return (
     <>
-    <section className='bg-ideablack text-white p-8'>
+    <section className='bg-gray-200 text-ideablack p-8'>
       <h1 className='text-xl mb-2 text-mildgreen font-medium'>Read More</h1>
-      <h2 className=" text-3xl font-bold leading-tight tracking-tighter md:text-4xl mb-2">
+      <h2 className=" text-3xl font-bold leading-tight tracking-tighter md:text-4xl mb-6">
         Stay Ahead
       </h2>
-      <p className='mb-10 text-lg'>Read more Idealistic insights.</p>
-      <div className="mb-20 grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32">
+      {/* <p className='mb-10 text-lg'>Read more Idealistic insights.</p> */}
+      <div className="mb-4 grid grid-cols-1 gap-y-20 md:grid-cols-3 md:gap-x-2 md:gap-y-32 lg:gap-x-32">
         {posts.map((post) => (
           <PostPreview
             key={post._id}
             title={post.title}
             coverImage={post.coverImage}
-            date={post.date}
+            // date={post.date}
             author={post.author}
             slug={post.slug}
-            excerpt={post.excerpt}
+            // excerpt={post.excerpt}
             tags={post.tags}
           />
         ))}
       </div>
     </section>
+
+
     <main className=" flex flex-col  md:flex-row md:justify-between w-full  ">
           
     <div className="md:mt-0 mt-8 md:mx-6 hover:text-ideablack flex items-center hidden md:inline-block">

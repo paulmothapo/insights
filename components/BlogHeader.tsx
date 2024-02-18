@@ -7,7 +7,7 @@ export default function BlogHeader({
 }: {
   title: string
   description?: any[]
-  level: 1 | 2
+  level: 1 | 2 
 }) { {
       return (
         <>

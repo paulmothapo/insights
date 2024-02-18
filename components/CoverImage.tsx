@@ -16,16 +16,16 @@ export default function CoverImage(props: CoverImageProps) {
 
   const image = source?.asset?._ref ? (
     <div
-      className={cn('shadow-small', {
-        'transition-shadow duration-200 hover:shadow-medium': slug,
+      className={cn('', {
+        'transition-shadow duration-200': slug,
         'transform transition-transform duration-200 hover:scale-105': slug,
       })}
       style={{ 
-        boxShadow: '0px 0px 6px rgba(0, 0, 0, 0)',  
+        // boxShadow: '0px 0px 6px rgba(0, 0, 0, 0)',  
         display: 'flex',  
         alignItems: 'center',  
         justifyContent: 'center',  
-        borderRadius: '12px',  
+        // borderRadius: '12px',  
         overflow: 'hidden',
       }}
     >

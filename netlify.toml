@@ -1,0 +1,8 @@
+[template]
+  incoming-hooks = ["Sanity"]
+
+[template.environment]
+  NEXT_PUBLIC_SANITY_PROJECT_ID="2c35yyyr"
+  NEXT_PUBLIC_SANITY_DATASET="production""
+  SANITY_API_WRITE_TOKEN="sklU8vhpqFgQECpbuNmRvrMDtPCwmnbk7TplYxrwrNFF0eg43CbRfo0NSkL7vHQhF5IL0tk1Ogz56LiysvnHcxRq7uCKmupsdZtpTU14ilnjKLwTGkS7D78YJEysShumJHtA9gAD9RQaXIF3fdTB5Z7Cy99l84COZjZtRQwFzY1JP9SOFGUR"
+  SANITY_API_READ_TOKEN="skt0mfi5swHrq1mYepFbylZYpG2lnfCHua6o0HCZce3KfoYM9bZHPxLqEkiOpidC6bpR95HVDOdtFTrCcGvqgKn6SH9xnpT2cC6JvRFLDcb1jmftwRszPauiWlvuJvcSrn6d7rMCUhbDQ9fFoo9WmRjGSqWHx4ayjJunDguUXKg922ByoPZX"

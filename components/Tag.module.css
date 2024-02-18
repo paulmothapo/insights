@@ -1,0 +1,15 @@
+
+.tag {
+    display: inline-block;
+    margin-right: 8px;
+    color: #0400f3;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 8px; 
+    text-decoration: none;
+  }
+  
+  .tag:hover {
+    text-decoration: underline;
+  }
+  

@@ -27,23 +27,24 @@ interface PageProps {
   preview?: boolean
 }
 
-const TagPage: React.FC<PageProps> = ({ industry, settings, loading, preview }) => {
+const TagPage: React.FC<PageProps> = ({  industry, settings, loading, preview }) => {
   return (
     <>
-    <Header/>
+      <Header/>
       <Layout preview={preview} loading={loading}>
         <Container>
-            <div>
-            <h1>Posts</h1>
+          <div>
+            {/* <h1>{tag.name} Posts</h1> */}
             <PostList posts={industry} />
-            </div>
-            </Container>
-        </Layout>
+          </div>
+        </Container>
+      </Layout>
       <Analytics />
       <Footer/>
     </>
   );
 };
+
 
 export const getStaticProps: GetStaticProps<PageProps> = async (ctx) => {
   const { params = {} } = ctx;

@@ -57,16 +57,16 @@ const Header = ({}) => {
           <div className="bg-lightgreen py-10 w-screen shadow-xl border-t border-darkgreen">
           <div className="relative">
           <div className="flex items-center cursor-pointer ml-4 text-lg font-semibold text-ideablack" onClick={toggleInsightsDropdown}>
-            <span>Insights</span>
+            <span>Featured</span>
             <span className="ml-2">{getToggleIcon(showInsightsDropdown)}</span>
           </div>
           {showInsightsDropdown && (
             <div className="mt-2 ml-8 space-y-2">
-              {getNavLink("/insights/podcast", "Podcast")}
-              <div className="mt-5">{getNavLink("/insights/fintechworld", "Fintech World")}</div>
-              <div className="mt-5">{getNavLink("/insights/books", "Books")}</div>
-              <div className="mt-5">{getNavLink("/insights/newsletter", "Newsletter")}</div>
-              <div className="mt-5">{getNavLink("/insights/reports", "Reports")}</div>
+              {getNavLink("https://idealisticworld.com/insights/podcast", "Podcast")}
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/insights/fintechworld", "Fintech World")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/insights/books", "Books")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/insights/newsletter", "Newsletter")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/insights/reports", "Reports")}</div>
             </div>
           )}
         </div>
@@ -79,11 +79,11 @@ const Header = ({}) => {
           {showIndustryDropdown && (
             <div className="mt-2 ml-8 space-y-2">
               {getNavLink("/industries/education", "Education")}
-              <div className="mt-5">{getNavLink("/industries/energy", "Energy")}</div>
-              <div className="mt-5">{getNavLink("/industries/fianacial-services", "Financial Services")}</div>
-              <div className="mt-5">{getNavLink("/industries/healthcare", "Healthcare")}</div>
-              <div className="mt-5">{getNavLink("/industries/media-and-entertainment", "Media & Entertainment")}</div>
-              <div className="mt-5">{getNavLink("/industries/technology", "Technology")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/industries/energy", "Energy")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/industries/fianacial-services", "Financial Services")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/industries/healthcare", "Healthcare")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/industries/media-and-entertainment", "Media & Entertainment")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/industries/technology", "Technology")}</div>
             </div>
           )}
         </div>
@@ -96,10 +96,10 @@ const Header = ({}) => {
           {showServicesDropdown && (
             <div className="mt-2 ml-8 space-y-2">
               {getNavLink("/services/change-management", "Change Management")}
-              <div className="mt-5">{getNavLink("/services/innovation", "Innovation")}</div>
-              <div className="mt-5">{getNavLink("/services/sustainability", "Sustainability")}</div>
-              <div className="mt-5">{getNavLink("/services/sales-and-marketing", "Sales & Marketing")}</div>
-              <div className="mt-5">{getNavLink("/services/transformation", "Transformation")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/services/innovation", "Innovation")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/services/sustainability", "Sustainability")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/services/sales-and-marketing", "Sales & Marketing")}</div>
+              <div className="mt-5">{getNavLink("https://idealisticworld.com/services/transformation", "Transformation")}</div>
             </div>
           )}
         </div>
@@ -111,7 +111,7 @@ const Header = ({}) => {
           </div>
           {showAboutDropdown && (
             <div className="mt-2 ml-8 space-y-2">
-              {getNavLink("/about", "About Overview")}
+              {getNavLink("https://idealisticworld.com/about", "About Overview")}
               <div className="mt-5">{getNavLink("/about/our-purpose-mission-values", " Purpose, Mission & Values")}</div>
               {/* <div className="mt-5">{getNavLink("", "How we work")}</div> */}
             </div>
@@ -127,17 +127,17 @@ const Header = ({}) => {
       
     const DesktopMenu = () => (
       <div className="hidden md:flex space-x-4 justify-center">
-        <Dropdown title="Insights" subtitle="Transforming the world with innovative ideas." items={[{label:"Books", href:"/insights/books"}, {label:"Fintech World", href:"/insights/fintech-world"}, {label:"Newsletter", href:"/insights/newsletter"}, {label:"Podcast", href:"/insights/podcast"},{ label:"Reports", href:"/insights/reports"}]} />
+        <Dropdown title="Insights" subtitle="Transforming the world with innovative ideas." items={[{label:"Books", href:"https://idealisticworld.com/insights/books"}, {label:"Fintech World", href:"https://idealisticworld.com/insights/fintech-world"}, {label:"Newsletter", href:"https://idealisticworld.com/insights/newsletter"}, {label:"Podcast", href:"https://idealisticworld.com/insights/podcast"},{ label:"Reports", href:"https://idealisticworld.com/insights/reports"}]} />
         <Dropdown title="Industries" subtitle="Innovative ideas, transforming industries." items={[{label:"Education", href:"/industries/education"}, {label:"Energy", href:"/industries/energy"}, {label:"Financial Services", href:"/industries/financial-services"}, {label:"Healthcare", href:"/industries/healthcare"}, {label:"Media & Entertainment", href:"/industries/media-and-entertainmnet"}, {label:"Technology", href:"/industries/technology"}]} />
-        <Dropdown title="Services" subtitle="How we can help." items={[{label:"Change Management", href:"/services/change-management"}, {label:"Innovation", href:"/services/innovation"}, {label:"Sustainability", href:"/services/sustainability"}, {label:"Sales & Marketing", href:"/services/sales-and-marketing"}, {label:"Transformation", href:"/services/transformation"}]} />
-        <Dropdown title="About" items={[{label: "About Overview", href: "/about"}, {label: "Purpose, Mission & Values", href: "/about/our-purpose-mission-values"}]} />
+        <Dropdown title="Services" subtitle="How we can help." items={[{label:"Change Management", href:"https://idealisticworld.com/services/change-management"}, {label:"Innovation", href:"https://idealisticworld.com/services/innovation"}, {label:"Sustainability", href:"https://idealisticworld.com/services/sustainability"}, {label:"Sales & Marketing", href:"https://idealisticworld.com/services/sales-and-marketing"}, {label:"Transformation", href:"https://idealisticworld.com/services/transformation"}]} />
+        <Dropdown title="About" items={[{label: "About Overview", href: "https://idealisticworld.com/about"}, {label: "Purpose, Mission & Values", href: "https://idealisticworld.com/about/our-purpose-mission-values"}]} />
       </div>
     );
     
 
       const CallToAction = () => (
         <div>
-            {getButton("/about/contact-us", "Become A Client")}
+            {getButton("https://idealisticworld.com/about/contact-us", "Become A Client")}
         </div>
       );
       
@@ -148,7 +148,7 @@ const Header = ({}) => {
           <div className="bg-lightgreen flex items-center header justify-between p-3 fixed top-0 z-50 w-full shadow-xl">
           
             <div className={`font-black ${styles["logo"]}`}>
-              <a href="/">
+              <a href="https://idealisticworld.com">
                 <Image  
                   width={150}
                   height={150}

@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           <div className="font-bold flex flex-col sm:flex-row mb-8 mx-auto text-white-600 justify-center md:justify-between py-2 ml-6">
 
             <div>
-              <a href="/">
+              <a href="https://idealisticworld.com">
                 <Image
                   width={150}
                   height={150} 
@@ -70,25 +70,25 @@ const Footer: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4">
               <div className='flex flex-row'>
-                <a className="mt-2 sm:mt-0 sm:text-lg" href="/about/idealistic-inc-careers">
+                <a className="mt-2 sm:mt-0 sm:text-lg" href="https://idealisticworld.com/about/idealistic-inc-careers">
                   <span>Careers</span>
                 </a>
-                <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="/about/contact-us">
+                <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="https://idealisticworld.com/about/contact-us">
                   <span>Contact Us</span>
                 </a>
-                <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="/about">
+                <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="https://idealisticworld.com/about">
                   <span>About Us</span>
                 </a>
               </div>
               
               <div className='flex flex-row' >
-              <a className="mt-2 sm:mt-0 sm:text-lg" href="/about/policies/privacy-policy">
+              <a className="mt-2 sm:mt-0 sm:text-lg" href="https://idealisticworld.com/about/policies/privacy-policy">
                 <span>Privacy policy</span>
               </a>
-              <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="/about/policies/terms-of-use">
+              <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="https://idealisticworld.com/about/policies/terms-of-use">
                 <span>Terms Of Use</span>
               </a>
-              <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="/partner-with-us">
+              <a className="mt-2 sm:mt-0 sm:text-lg ml-4" href="https://idealisticworld.com/partner-with-us">
                 <span>Partner With Us</span>
               </a>
               </div>

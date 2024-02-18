@@ -45,7 +45,7 @@ const Subscribe: React.FC = () => {
   return (
     <div>
       <h2 className='mb-2 font-bold text-lg'>Subscribe</h2>
-      <p>Stay ahead with our latest insights</p>
+      <p>Stay ahead with our latest Thinking.</p>
       {success ? (
         <p>Success! Check your email for a confirmation link.</p>
       ) : (

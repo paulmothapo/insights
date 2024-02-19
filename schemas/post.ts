@@ -5,7 +5,7 @@ import { defineField, defineType } from 'sanity'
 
 import authorType from './author'
 import tagType from './tag'
-import categoryType from './category'
+// import categoryType from './category'
 
 export default defineType({
   name: 'post',
@@ -192,12 +192,12 @@ export default defineType({
       of: [{ type: 'reference', to: [{ type: tagType.name }] }],
     }),
     
-    defineField({
-      name: 'category',
-      title: 'Category',
-      type: 'reference',
-      to: [{ type: categoryType.name }],
-    }),
+    // defineField({
+    //   name: 'category',
+    //   title: 'Category',
+    //   type: 'reference',
+    //   to: [{ type: categoryType.name }],
+    // }),
   ],
   preview: {
     select: {

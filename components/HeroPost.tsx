@@ -22,7 +22,7 @@ export default function HeroPost(
             <CoverImage slug={slug} title={title} image={coverImage} priority />
           </div>
       </div>
-      <div className="mb-16 md:mb-20 bg-darkgreen text-lightgreen md:px-32 p-6">
+      <div className="mb-16 md:mb-20 bg-lightgreen text-darkgreen md:px-32 p-6">
         <div>
           <h3 className="mb-4 text-2xl leading-tight lg:text-4xl font-medium">
             <Link href={`/posts/${slug}`} className="hover:underline">
@@ -32,7 +32,7 @@ export default function HeroPost(
           <div className="mb-4 text-lg md:mb-0">
             <Date dateString={date} />
           </div>
-          <div className='text-blue-500 mb-4 font-semibold'>
+          <div className='text-mildgreen mb-4 font-semibold'>
           {tags && tags.map((tag: Tag, index: number) => (
               <Link key={index} href={`/categories/${tag.slug}`} passHref legacyBehavior>
                 <a>

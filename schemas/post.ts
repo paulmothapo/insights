@@ -192,12 +192,6 @@ export default defineType({
       of: [{ type: 'reference', to: [{ type: tagType.name }] }],
     }),
     
-    // defineField({
-    //   name: 'category',
-    //   title: 'Category',
-    //   type: 'reference',
-    //   to: [{ type: categoryType.name }],
-    // }),
   ],
   preview: {
     select: {

@@ -8,10 +8,10 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
     <>
     <section className=' p-8'>
       <h1 className='text-xl mb-2 text-mildgreen font-medium'>Read More</h1>
-      <h2 className=" text-3xl font-bold leading-tight tracking-tighter md:text-4xl mb-2">
+      <h2 className=" text-3xl font-bold leading-tight tracking-tighter md:text-4xl mb-6">
         Stay Ahead
       </h2>
-      <p className='mb-10 text-lg'>Read more Idealistic insights.</p>
+      {/* <p className='mb-10 text-lg'>Read more Idealistic insights.</p> */}
       <div className="mb-20 grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32">
         {posts.map((post) => (
           <PostPreview

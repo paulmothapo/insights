@@ -31,10 +31,10 @@ export default function CoverImage(props: CoverImageProps) {
     >
       <Image
         className=""
-        width={800}  
-        height={400} 
+        width={1000}  
+        height={600} 
         alt={`Cover Image for ${title}`}
-        src={urlForImage(source).height(400).width(800).url()} 
+        src={urlForImage(source).height(600).width(1000).url()} 
         sizes="100vw"
         priority={priority}
       />

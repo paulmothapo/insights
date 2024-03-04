@@ -10,7 +10,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
           How we are Helping Clients
         </h1>
       </div> */}
-      <main className="flex flex-row w-full p-2 text-sm ">
+      {/* <main className="flex flex-row w-full p-2 text-sm ">
         <div className="hover:text-mildgreen flex items-center border-r-4  px-3 md:px-16 border-r-blue-500">
           <a
             href="https://www.idealisticworld.com/industries/education/how-we-help-clients"
@@ -64,7 +64,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
             Technology
           </a>
         </div>
-      </main>
+      </main> */}
 
       <section className="bg-gray-200 text-ideablack p-8">
         <h1 className="text-xl mb-2 text-mildgreen font-medium">Read More</h1>

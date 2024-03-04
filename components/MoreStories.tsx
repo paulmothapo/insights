@@ -26,7 +26,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
         ))}
       </div>
     </section>
-    <main className=" flex flex-col  md:flex-row md:justify-between w-full  ">
+    {/* <main className=" flex flex-col  md:flex-row md:justify-between w-full  ">
           
     <div className="md:mt-0 mt-8 md:mx-6 hover:text-ideablack flex items-center hidden md:inline-block">
       <a href='/about/our-purpose-mission-values' className="font-bold hover:border-b-4 hover:border-b-darkgreen border-b-4 border-b-lightgreen p-4 md:mt-6 text-ideablack hover:text-ideablack flex justify-center ">
@@ -60,7 +60,7 @@ export default function MoreStories({ posts }: { posts: Post[] }) {
           Technology <ChevronRightIcon className="h-6 w-6 text-mildgreen hidden md:inline-block  ml-2" />
         </a>
     </div>
-  </main>
+  </main> */}
   </>
   )
 }

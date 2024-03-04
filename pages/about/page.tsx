@@ -3,7 +3,7 @@ import React from 'react';
 const AboutPage: React.FC = () => {
     return (
         <div className="about-page">
-            <h1>About Our Consulting Company</h1>
+            {/* <h1>About Our Consulting Company</h1>
             <p>Welcome to our consulting company! We are dedicated to providing top-notch consulting services to businesses across various industries.</p>
             
             <h2>Our Mission</h2>
@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
             </ul>
             
             <h2>Contact Us</h2>
-            <p>If you're interested in learning more about our consulting services or would like to discuss how we can help your business, please don't hesitate to <a href="/contact">contact us</a>.</p>
+            <p>If you're interested in learning more about our consulting services or would like to discuss how we can help your business, please don't hesitate to <a href="/contact">contact us</a>.</p> */}
         </div>
     );
 };

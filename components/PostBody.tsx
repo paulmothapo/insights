@@ -26,6 +26,7 @@ const myPortableTextComponents: Partial<PortableTextReactComponents> = {
 export default function PostBody({ content }) {
   return (
     <div className={`mx-6 md:mx-auto max-w-2xl ${styles.portableText}`}>
+      <div className="fa fa-external-link" aria-hidden="true"></div>
       <PortableText value={content} components={myPortableTextComponents} />
     </div>
   )
